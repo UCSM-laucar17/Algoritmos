@@ -10,7 +10,7 @@ class Coordenada{
         this.x=x;
         this.y=y;
     }
-    //constructor ??
+    //constructor para otra coor
     public Coordenada(Coordenada c){
         this.x=c.x;
         this.y=c.y;
