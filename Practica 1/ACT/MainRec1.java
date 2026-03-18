@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Coordenada{
     private double x;
     private double y;
