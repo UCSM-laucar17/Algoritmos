@@ -13,6 +13,7 @@ class Rectangulo{
     Coordenada getEsquina2(){
         return esquina2;
     }
+    //crea los rectan
     void setEsquina1(Coordenada c){
         esquina1=new Coordenada(c);
     }
