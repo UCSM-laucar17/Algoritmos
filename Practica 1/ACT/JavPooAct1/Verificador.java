@@ -1,6 +1,7 @@
 class Verificador{
     //metodos estaticos 
     static boolean esSobrePos(Rectangulo r1,Rectangulo r2){
+        //! contrario true
         return !(r1.getEsquina2().x<r2.getEsquina1().x || r1.getEsquina1().x>r2.getEsquina2().x || r1.getEsquina2().y<r2.getEsquina1().y || r1.getEsquina1().y>r2.getEsquina2().y);
     }
 
