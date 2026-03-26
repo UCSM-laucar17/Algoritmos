@@ -11,4 +11,6 @@ public class Cajoneria<T>{
     public ArrayList<Caja<T>> getLista(){ 
         return lista; 
     } 
-}  
+}
+
+
