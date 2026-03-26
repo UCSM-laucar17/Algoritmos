@@ -12,7 +12,6 @@ class DemoMetodosGenericos{
         }
         return true;
     }
-
     // Inicio parte Ejer1
     public static <T> boolean exist(T[] x, T y){
         for(T i:x){
@@ -23,7 +22,6 @@ class DemoMetodosGenericos{
         return false;
     }
     //Fin Parte Ejer1
-
     public static void main(String []args){
         Integer num1[]={1,2,2,3};
         Integer num2[]={1,2,2,3};
