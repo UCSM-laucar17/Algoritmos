@@ -34,9 +34,9 @@ public class Cajoneria<T>{
         String res="Posicion Color Objeto\n"; 
         for(int i=0;i<lista.length;i++){ 
             Caja<T> c = lista.get(i); 
-            rpta += i+" "+c.getColor()+" "+c.getObjeto()+"\n"; 
+            res += i+" "+c.getColor()+" "+c.getObjeto()+"\n"; 
         } 
-        return rpta; 
+        return res; 
     } 
 }
 
