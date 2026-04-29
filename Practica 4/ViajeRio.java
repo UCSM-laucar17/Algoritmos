@@ -8,7 +8,6 @@ public class ViajeRio {
         for (int longitud = 1; longitud < n; longitud++) {
             for (int i = 0; i < n - longitud; i++) {
                 int j = i + longitud;
-                // Costo directo
                 C[i][j] = T[i][j];
                 for (int k = i + 1; k < j; k++) {
                     int costo = T[i][k] + C[k][j];
