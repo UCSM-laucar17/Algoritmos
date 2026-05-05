@@ -1,3 +1,4 @@
+package Ejer1;
 import Act1.ExceptionIsEmpty;
 
 class StackLink<E> implements Stack<E>{
