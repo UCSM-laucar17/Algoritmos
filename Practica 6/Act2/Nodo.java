@@ -1,3 +1,4 @@
+package Act2;
 public class Nodo<T>{
     T dato;
     Nodo<T> next;
