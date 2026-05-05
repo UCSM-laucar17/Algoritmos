@@ -1,7 +1,7 @@
 package Ejer1;
 import Act1.ExceptionIsEmpty;
 
-class StackLink<E> implements Stack<E>{
+public class StackLink<E> implements Stack<E>{
     private Node<E> top;
     public StackLink(){
         this.top = null;
