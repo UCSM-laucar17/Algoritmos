@@ -8,7 +8,6 @@ public class TestQueue{
         System.out.println(colaInt.dequeue());
         System.out.println(colaInt.front());
         System.out.println(colaInt);
-
         QueueArray<String> colaStr = new QueueArray<>(5);
         colaStr.enqueue("Ana");
         colaStr.enqueue("Pedro");
