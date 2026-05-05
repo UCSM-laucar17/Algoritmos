@@ -1,14 +1,11 @@
-
 import Act1.ExceptionIsEmpty;
 public class DequeLink<E> implements Deque<E>{
     private Nodo<E> first;
     private Nodo<E> last;
-
     public DequeLink(){
         first=null;
         last=null;
     }
-
     public void addFirst(E x){
         Nodo<E> nuevo=new Nodo<>(x);
         if(isEmpty()){
@@ -18,7 +15,6 @@ public class DequeLink<E> implements Deque<E>{
             first=nuevo;
         }
     }
-
     public void addLast(E x){
         Nodo<E> nuevo=new Nodo<>(x);
         if(isEmpty()){
@@ -28,7 +24,6 @@ public class DequeLink<E> implements Deque<E>{
             last=nuevo;
         }
     }
-
     public E removeFirst() throws ExceptionIsEmpty{
         if(isEmpty()){
             throw new ExceptionIsEmpty("vacio");
@@ -40,7 +35,6 @@ public class DequeLink<E> implements Deque<E>{
         }
         return dat;
     }
-
     public E removeLast() throws ExceptionIsEmpty{
         if(isEmpty()){
             throw new ExceptionIsEmpty("Deque vacio");
@@ -60,25 +54,21 @@ public class DequeLink<E> implements Deque<E>{
         last.next=null;
         return dat;
     }
-
     public E getFirst() throws ExceptionIsEmpty{
         if(isEmpty()){
             throw new ExceptionIsEmpty("vacio");
         }
         return first.dato;
     }
-
     public E getLast() throws ExceptionIsEmpty{
         if(isEmpty()){
             throw new ExceptionIsEmpty("vacio");
         }
         return last.dato;
     }
-
     public boolean isEmpty(){
         return first==null;
     }
-
     public String toString(){
         String s="";
         Nodo<E> actual=first;
