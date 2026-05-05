@@ -1,3 +1,4 @@
+package Act1;
 public class TestQueue{
     public static void main(String[] args) throws ExceptionIsEmpty{
         QueueArray<Integer>colaInt = new QueueArray<>(5);
