@@ -1,5 +1,6 @@
 package Ejer2;
 import Act1.ExceptionIsEmpty;
+import Ejer1.StackLink;
 
 public class Test{
     public static void main(String[]args)throws ExceptionIsEmpty{
