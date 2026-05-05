@@ -1,3 +1,4 @@
+package Ejer3;
 import Act2.DequeLink;
 import Act1.ExceptionIsEmpty;
 public class ColaPrioridad<E>{
