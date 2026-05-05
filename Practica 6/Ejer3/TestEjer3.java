@@ -1,3 +1,4 @@
+package Ejer3;
 import Act1.ExceptionIsEmpty;
 public class TestEjer3{
     public static void main(String[] args) throws ExceptionIsEmpty{
