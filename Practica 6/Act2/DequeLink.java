@@ -1,3 +1,4 @@
+package Act2;
 import Act1.ExceptionIsEmpty;
 public class DequeLink<E> implements Deque<E>{
     private Nodo<E> first;
