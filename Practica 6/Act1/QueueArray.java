@@ -1,3 +1,4 @@
+package Act1;
 public class QueueArray<E> implements Queue<E> {
     private E[] array;
     private int front;
@@ -36,7 +37,7 @@ public class QueueArray<E> implements Queue<E> {
     public String toString() {
         String s = "";
         for (int i = 0; i < size; i++)
-            s += array[(front + i) % array.length] + " ";
+             s += array[(front + i) % array.length] + " ";
         return s;
     }
 }
