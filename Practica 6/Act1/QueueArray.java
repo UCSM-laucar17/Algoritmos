@@ -3,7 +3,6 @@ public class QueueArray<E> implements Queue<E> {
     private int front;
     private int rear;
     private int size;
-
     @SuppressWarnings("unchecked")
     public QueueArray(int n) {
         array = (E[]) new Object[n];
@@ -11,14 +10,12 @@ public class QueueArray<E> implements Queue<E> {
         rear = -1;
         size = 0;
     }
-
     public void enqueue(E x) {
         if (isFull()) throw new RuntimeException();
         rear = (rear + 1) % array.length;
         array[rear] = x;
         size++;
     }
-
     public E dequeue() throws ExceptionIsEmpty {
         if (isEmpty()) throw new ExceptionIsEmpty("");
         E aux = array[front];
@@ -26,20 +23,16 @@ public class QueueArray<E> implements Queue<E> {
         size--;
         return aux;
     }
-
     public E front() throws ExceptionIsEmpty {
         if (isEmpty()) throw new ExceptionIsEmpty("");
         return array[front];
     }
-
     public boolean isEmpty() {
         return size == 0;
     }
-
     public boolean isFull() {
         return size == array.length;
     }
-
     public String toString() {
         String s = "";
         for (int i = 0; i < size; i++)
