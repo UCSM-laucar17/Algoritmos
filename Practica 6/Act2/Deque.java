@@ -1,3 +1,5 @@
+package Act2;
+
 import Act1.ExceptionIsEmpty;
 public interface Deque<E> {
     void addFirst(E x);
