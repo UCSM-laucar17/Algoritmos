@@ -70,13 +70,13 @@ public class DequeLink<E> implements Deque<E>{ //vamos a usar interfaz Deque
     public boolean isEmpty(){
         return first==null; //si el primero es null no hay cola 
     }
-    public String toString(){
-        String s="";
-        Nodo<E> actual=first;
-        while(actual!=null){
-            s+=actual.dato+" ";
-            actual=actual.next;
+    public String toString(){ 
+        String s=""; //crea el string acio
+        Nodo<E> actual=first; //puntero al nodo
+        while(actual!=null){ 
+            s+=actual.dato+" "; //dato nodo copiamos al string
+            actual=actual.next; //pasa al siguiente 
         }
-        return s;
+        return s; //retorna string
     }
 }
