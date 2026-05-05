@@ -1,5 +1,5 @@
 package Act2;
-import actividad1.ExceptionIsEmpty;
+import Act1.ExceptionIsEmpty;
 public class TestDeque{
     public static void main(String[] args) throws ExceptionIsEmpty{
         DequeLink<Integer> d=new DequeLink<>();
