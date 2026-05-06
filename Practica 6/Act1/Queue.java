@@ -1,4 +1,5 @@
 package Act1;
+
 public interface Queue<E>{
     void enqueue(E x);
     E dequeue()throws ExceptionIsEmpty;
