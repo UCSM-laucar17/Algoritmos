@@ -1,3 +1,5 @@
+package Ejer4;
+
 public class NodoLista<T>{
     T value; 
     NodoLista<T> siguiente; 
