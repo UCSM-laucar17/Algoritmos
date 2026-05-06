@@ -1,3 +1,5 @@
+package Ejer5;
+
 public class SonIguales {
     // Método genérico que compara dos listas enlazadas 
     // Retorna true si tienen los mismos elementos en el mismo orden 
