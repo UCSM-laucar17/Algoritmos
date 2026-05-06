@@ -1,5 +1,4 @@
 package Ejer6;
-
 import Act1.Node;
 import Act3.ListLinked;
 
