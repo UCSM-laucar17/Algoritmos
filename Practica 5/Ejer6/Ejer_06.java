@@ -1,3 +1,8 @@
+package Ejer6;
+
+import Act1.Node;
+import Act3.ListLinked;
+
 public class Ejer_06 {
     public static <T> ListLinked<T> concatenarListas(ListLinked<T> lista1, ListLinked<T> lista2) {
         ListLinked<T> nuevaLista = new ListLinked<>();
