@@ -1,3 +1,8 @@
+package Ejer7;
+
+import Act1.Node;
+import Act3.ListLinked;
+
 public class Ejer_07 {
     public static <T> ListLinked<T> invertirLista(ListLinked<T> lista) {
         ListLinked<T> nuevaLista = new ListLinked<>();        
