@@ -1,3 +1,5 @@
+package Ejer5;
+
 public class ListaEnlazada<T>{
     private NodoLista<T> primero;
     public ListaEnlazada(){
