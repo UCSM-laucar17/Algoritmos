@@ -1,5 +1,6 @@
 package Act2;
 import Act1.ExceptionIsEmpty;
+//deque cola de doble final
 public class DequeLink<E> implements Deque<E>{ //vamos a usar interfaz Deque
     private Nodo<E> first; //Nodo inicio
     private Nodo<E> last; //Nodo final 
