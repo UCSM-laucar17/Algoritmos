@@ -1,4 +1,5 @@
 package Act5;
+import Ejer4.NodoLista;
 
 public class GestorDeTareas {
     private ListaEnlazada<Tarea> tareas;    // Lista enlazada donde se guardan todas las tareas    
@@ -40,11 +41,11 @@ public class GestorDeTareas {
     public Tarea obtenerTareaMasPrioritaria() {
         if (tareas.estaVacia()) return null;
         NodoLista<Tarea> actual = tareas.getCabeza();
-        Tarea masPrioritaria = actual.dato;
+        Tarea masPrioritaria = actual.value;
         actual = actual.siguiente;
         while (actual != null) {
-            if (actual.dato.getPrioridad() < masPrioritaria.getPrioridad()) {
-                masPrioritaria = actual.dato;
+            if (actual.value.getPrioridad() < masPrioritaria.getPrioridad()) {
+                masPrioritaria = actual.value;
             }
             actual = actual.siguiente;
         }
@@ -61,10 +62,10 @@ public class GestorDeTareas {
         ListaEnlazada<Tarea> pendientes  = new ListaEnlazada<>();
         NodoLista<Tarea> actual = tareas.getCabeza();
         while (actual != null) {
-            if (actual.dato.getEstado().equalsIgnoreCase("completada")) {
-                completadas.agregar(actual.dato);
+            if (actual.value.getEstado().equalsIgnoreCase("completada")) {
+                completadas.agregar(actual.value);
             } else {
-                pendientes.agregar(actual.dato);
+                pendientes.agregar(actual.value);
             }
             actual = actual.siguiente;
         }
