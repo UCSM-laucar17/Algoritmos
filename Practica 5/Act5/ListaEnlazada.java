@@ -1,4 +1,5 @@
 package Act5;
+import Ejer4.NodoLista;
 
 public class ListaEnlazada<T extends Comparable<T>> {
     private NodoLista<T> cabeza;
@@ -8,8 +9,8 @@ public class ListaEnlazada<T extends Comparable<T>> {
         this.tamanio = 0;
     }
     // Agregar al final
-    public void agregar(T dato) {
-        NodoLista<T> nuevo = new NodoLista<>(dato);
+    public void agregar(T value) {
+        NodoLista<T> nuevo = new NodoLista<>(value);
         if (cabeza == null) {
             cabeza = nuevo;
         } else {
@@ -21,18 +22,18 @@ public class ListaEnlazada<T extends Comparable<T>> {
         }
         tamanio++;
     }
-    // Eliminar por dato (usa compareTo)
-    public boolean eliminar(T dato) {
+    // Eliminar por value (usa compareTo)
+    public boolean eliminar(T value) {
         if (cabeza == null) return false;
 
-        if (cabeza.dato.compareTo(dato) == 0) {
+        if (cabeza.value.compareTo(value) == 0) {
             cabeza = cabeza.siguiente;
             tamanio--;
             return true;
         }
         NodoLista<T> actual = cabeza;
         while (actual.siguiente != null) {
-            if (actual.siguiente.dato.compareTo(dato) == 0) {
+            if (actual.siguiente.value.compareTo(value) == 0) {
                 actual.siguiente = actual.siguiente.siguiente;
                 tamanio--;
                 return true;
@@ -42,10 +43,10 @@ public class ListaEnlazada<T extends Comparable<T>> {
         return false;
     }
     // Verificar si existe (usa compareTo)
-    public boolean contiene(T dato) {
+    public boolean contiene(T value) {
         NodoLista<T> actual = cabeza;
         while (actual != null) {
-            if (actual.dato.compareTo(dato) == 0) return true;
+            if (actual.value.compareTo(value) == 0) return true;
             actual = actual.siguiente;
         }
         return false;
@@ -71,7 +72,7 @@ public class ListaEnlazada<T extends Comparable<T>> {
         }
         NodoLista<T> actual = cabeza;
         while (actual != null) {
-            System.out.println("  " + actual.dato.toString());
+            System.out.println("  " + actual.value.toString());
             actual = actual.siguiente;
         }
     }
