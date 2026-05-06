@@ -1,3 +1,5 @@
+package Ejer4;
+
 public class ContarNodos{
     public static <T> int contarNodo(NodoLista<T> head){
         int c=0;
