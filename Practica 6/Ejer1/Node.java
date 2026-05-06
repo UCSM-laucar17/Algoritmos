@@ -1,7 +1,8 @@
 package Ejer1;
 public class Node<E>{
     private E data;
-    Node<E> next;   
+    Node<E> next;
+    public Object value;   
     public Node(E data){
         this.data = data;
         this.next = null;
