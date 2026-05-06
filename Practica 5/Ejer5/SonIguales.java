@@ -1,4 +1,5 @@
 package Ejer5;
+import Ejer4.NodoLista;
 
 public class SonIguales {
     // Método genérico que compara dos listas enlazadas 
