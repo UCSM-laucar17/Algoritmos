@@ -1,0 +1,13 @@
+package Ejer1;
+public class Node<E>{
+    private E data;
+    Node<E> next;
+    public Object value;   
+    public Node(E data){
+        this.data = data;
+        this.next = null;
+    }
+    public E getData(){return data;}
+    public Node<E> getNext(){return next;}
+    public void setNext(Node<E> next){this.next = next;}
+}
