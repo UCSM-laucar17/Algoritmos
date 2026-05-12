@@ -1,3 +1,5 @@
+package Act01;
+
 class Coordenada{
     double x,y;
     //constructor sin parametros
