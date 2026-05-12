@@ -1,3 +1,5 @@
+package Act01;
+
 class Rectangulo{
     Coordenada esquina1;
     Coordenada esquina2;
