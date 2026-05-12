@@ -1,4 +1,4 @@
-package Act04;
+package Act4;
 
 public class ItemDuplicated extends Exception{
     public ItemDuplicated(String msg){

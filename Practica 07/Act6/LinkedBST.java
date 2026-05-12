@@ -1,8 +1,12 @@
-public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E>{ 
+package Act6;
+import Act4.*;
+import Act5.*;
+public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E>{
     public class Node{
         public E dato;
         public Node left;
         public Node right;
+
         public Node(E dato){
             this(dato, null, null);
         }
@@ -12,7 +16,7 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E>{
             this.right = right;
         }
     }
-    private Node root;
+    protected Node root;
     public LinkedBST(){
         this.root = null;
     }
@@ -50,7 +54,6 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E>{
             return searchRec(actual.right, dato);
         }
     }
-
     public void delete(E dato) throws ExceptionIsEmpty{
         if (isEmpty()){
             throw new ExceptionIsEmpty();

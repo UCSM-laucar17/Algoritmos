@@ -1,5 +1,5 @@
-package 
-import Act06.*;
+package Act7;
+import Act6.*;
 
 public class InOrder<E extends Comparable<E>> extends LinkedBST<E>{
     public void inOrder(){

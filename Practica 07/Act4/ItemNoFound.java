@@ -1,4 +1,4 @@
-package Act04;
+package Act4;
 
 public class ItemNoFound extends Exception{
     public ItemNoFound(String msg){
