@@ -1,3 +1,4 @@
+package Act02;
 import java.util.*;
 
 class Coordenada{

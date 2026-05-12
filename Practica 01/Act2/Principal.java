@@ -1,3 +1,5 @@
+package Act02;
+
 //clase de pruebas - instan obj
 public class Principal{
     public static void main(String[] args){
