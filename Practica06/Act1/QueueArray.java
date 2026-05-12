@@ -1,4 +1,4 @@
-package Act1;
+package Practica06Act1;
 public class QueueArray<E> implements Queue<E> { //clase que usara metodos de la interfaz 
     private E[] array; //arreglo Generico
     private int front; //posicion inicio
@@ -40,5 +40,8 @@ public class QueueArray<E> implements Queue<E> { //clase que usara metodos de la
         for (int i = 0; i < size; i++) //recorre la cola
             s += array[(front + i) % array.length] + " "; //va insertando datos en el string 
         return s; //retorna el string
+    }
+    public int size(){
+        return size;
     }
 }
