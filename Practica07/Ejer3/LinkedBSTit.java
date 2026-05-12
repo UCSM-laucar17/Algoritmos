@@ -1,5 +1,5 @@
 package Ejer3;
-import Practica06.Act1.QueueArray;
+import Act1.QueueArray;
 import Act6.*;
 public class LinkedBSTit<E extends Comparable<E>> extends LinkedBST<E> {
     public int areaBST(){
