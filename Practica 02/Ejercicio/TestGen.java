@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 public class TestGen{ 
     public static void main(String[]args){           
         Cajoneria<Golosina> caj = new Cajoneria<>(); 

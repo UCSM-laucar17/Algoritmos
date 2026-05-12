@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 class DemoMetodosGenericos{
     public static <T extends Comparable<T>> boolean igualArrays (T[] x, T[]y){
         if(x.length != y.length){

@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 public class Golosina{ 
     private String nombre; 
     private double peso; 

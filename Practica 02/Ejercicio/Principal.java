@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 public class Principal{ 
     public static void main(String[] args){ 
         Cajoneria<Golosina> cajon = new Cajoneria<>(); 

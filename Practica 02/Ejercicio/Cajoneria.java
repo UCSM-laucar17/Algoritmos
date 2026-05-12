@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 import java.util.ArrayList;  
 public class Cajoneria<T>{  
     private ArrayList<Caja<T>> lista;  

@@ -1,3 +1,5 @@
+package Ejercicio;
+import Ejercicio.*;
 public class Chocolatina{ 
     private String marca; 
     public Chocolatina(String marca){ 

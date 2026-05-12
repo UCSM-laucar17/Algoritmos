@@ -1,13 +1,12 @@
+package Ejercicio;
 public class Caja<T>{ 
     private String color; 
     private T objeto; 
-
     public Caja(String color, T objeto){ 
         this.color = color; 
 
         this.objeto = objeto; 
     } 
-
     public String getColor(){ 
         return color; 
     } 
@@ -17,8 +16,7 @@ public class Caja<T>{
     } 
     @Override 
     public String toString(){ 
-
         return "Color: " + color + " | Objeto: " + objeto; 
 
-    } 
+    }
 }  
