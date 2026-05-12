@@ -1,4 +1,5 @@
 package Ejer01;
+import Act01.*;
 
 class Rectangulo{
     private Coordenada esquina1;

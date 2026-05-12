@@ -1,3 +1,5 @@
+package Act02;
+
 class Verificador{
     //metodos estaticos 
     static boolean esSobrePos(Rectangulo r1,Rectangulo r2){

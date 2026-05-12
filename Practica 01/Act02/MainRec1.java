@@ -2,8 +2,8 @@ package Act02;
 import java.util.*;
 
 class Coordenada{
-    private double x;
-    private double y;
+    double x;
+    double y;
     public Coordenada(){
         this.x=0;
         this.y=0;

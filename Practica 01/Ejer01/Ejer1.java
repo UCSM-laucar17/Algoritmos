@@ -1,5 +1,5 @@
 package Ejer01;
-
+import Act01.*;
 public class Ejer1{
     public static void main(String[] args){
         ContainerRect c=new ContainerRect(5);
