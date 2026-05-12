@@ -1,6 +1,6 @@
-package Act01;
+package Act1;
 
-class Coordenada{
+public class Coordenada{
     double x,y;
     //constructor sin parametros
     public Coordenada(){
@@ -18,11 +18,11 @@ class Coordenada{
         this.y=c.y;
     }
     //devuelve x
-    double getX(){
+    public double getX(){
         return x;
     }
     //devuelve y
-    double getY(){
+    public double getY(){
         return y;
     }
     //cambia x
@@ -38,7 +38,7 @@ class Coordenada{
         return Math.sqrt(Math.pow(x-c.x,2)+Math.pow(y-c.y,2));
     }
     //metodo estatico distancia dos coor
-    static double distancia(Coordenada c1,Coordenada c2){
+    public static double distancia(Coordenada c1,Coordenada c2){
         return Math.sqrt(Math.pow(c1.x-c2.x,2)+Math.pow(c1.y-c2.y,2));
     }
     //imprime el obj

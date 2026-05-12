@@ -1,5 +1,5 @@
-package Act01;
-import Act01.Coordenada;
+package Act1;
+import Act1.Coordenada;
 
 class Rectangulo{
     Coordenada esquina1;

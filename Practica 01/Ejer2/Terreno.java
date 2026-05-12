@@ -1,3 +1,5 @@
+package Ejer2;
+
 import java.io.File;
 import java.util.*;
 class Terreno{

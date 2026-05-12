@@ -1,3 +1,5 @@
+package Ejer2;
+
 class Zona{
     String mineral;
     double cantidad;

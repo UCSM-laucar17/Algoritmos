@@ -1,4 +1,4 @@
-package Act02;
+package Act2;
 
 class Verificador{
     //metodos estaticos 

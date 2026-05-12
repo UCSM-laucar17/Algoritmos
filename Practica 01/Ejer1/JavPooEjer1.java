@@ -1,6 +1,6 @@
-package Ejer01;
-import Act01.*;
-public class Ejer1{
+package Ejer1;
+import Act1.*;
+public class JavPooEjer1{
     public static void main(String[] args){
         ContainerRect c=new ContainerRect(5);
         Rectangulo r1=new Rectangulo(new Coordenada(1.5,0.3),new Coordenada(7.6,2.2));

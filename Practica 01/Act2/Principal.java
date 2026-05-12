@@ -1,4 +1,4 @@
-package Act02;
+package Act2;
 
 //clase de pruebas - instan obj
 public class Principal{
