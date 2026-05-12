@@ -1,6 +1,3 @@
-package Practica.Act06;
-import Practica.Act04.*;
-import Practica.Act5.*;
 public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E>{ 
     public class Node{
         public E dato;
