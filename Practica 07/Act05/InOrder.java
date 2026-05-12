@@ -1,4 +1,4 @@
-
+package 
 import Act06.*;
 
 public class InOrder<E extends Comparable<E>> extends LinkedBST<E>{
