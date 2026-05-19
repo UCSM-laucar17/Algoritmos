@@ -1,7 +1,7 @@
-package Act1;
+package Act3;
 import java.util.*;
 
-class Golosina{
+public class Golosina{
     private String nombre;
     private double peso;
     public Golosina(String nombre, double peso){

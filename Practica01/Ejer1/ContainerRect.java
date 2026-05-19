@@ -1,6 +1,7 @@
 //save r en arreglo de obj
 package Ejer1;
-import Act1.*;
+import Act1.Coordenada;
+import Act2.*;
 
 class ContainerRect{
     //arreg T obj

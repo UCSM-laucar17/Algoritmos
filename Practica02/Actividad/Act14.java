@@ -1,6 +1,7 @@
 package Actividad;
-import Act1.*;
 import java.util.*;
+
+import Act2.*;
 class Bolsa<T> implements Iterable<T>{
     private ArrayList<T> lista = new ArrayList<T>();
     private int tope;

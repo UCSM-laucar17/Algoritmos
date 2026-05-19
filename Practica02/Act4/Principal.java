@@ -1,4 +1,6 @@
-package Act1;
+package Act4;
+import Act2.*;
+import Act3.*;
 import java.util.*;
 public class Principal{
     public static void main(String [] args){

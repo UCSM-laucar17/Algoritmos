@@ -1,7 +1,7 @@
-package Act1;
+package Act2;
 
 import java.util.*;
-class Bolsa<T> implements Iterable<T>{
+public class Bolsa<T> implements Iterable<T>{
     private ArrayList<T> lista = new ArrayList<T>();
     private int tope;
     public Bolsa(int tope){

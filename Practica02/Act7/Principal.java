@@ -1,9 +1,12 @@
-package Act1_7;
-import Act1.*;
+package Act7;
 import java.util.*;
+import Act2.*;
+import Act3.Golosina;
+import Act3.Chocolatina;
+
 public class Principal{
     public static void main(String [] args){
-        Bolsa<Chocolatina> bolsaCho = new Bolsa<>(3);
+        Bolsa<Chocolatina> bolsaCho=new Bolsa<>(3);
         Chocolatina c1=new Chocolatina("milky");
         Chocolatina c2=new Chocolatina("Iberica");
         Chocolatina c3=new Chocolatina("Valenzuela");

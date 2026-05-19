@@ -1,5 +1,5 @@
-package Act1_5;
-import Act1.*;
+package Act6;
+import Act2.*;
 class DemoMetodosGenericos{
     public static <T extends Comparable<T>> boolean igualArrays (T[] x, T[]y){
         if(x.length != y.length){
@@ -31,11 +31,9 @@ class DemoMetodosGenericos{
         if(igualArrays(num1,num4)){
             System.out.println("num1 es igual a num4");
         }
-        /*
         Double dvals[]={1.1,2.2,3.3,4.4,5.5};
         if(igualArrays(num1, dvals)){
             System.out.println("num es igual a dvals");
         }
-        */
     }
 }

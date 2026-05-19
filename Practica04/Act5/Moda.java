@@ -1,6 +1,6 @@
 package Act5;
-
 public static int Moda(int array[]) {
+
 //ModaMétodo que calcula la moda de un arreglo
     int first = 0;                  // índice inicial del arreglo
     int end = array.length - 1;     // índice final del arreglo

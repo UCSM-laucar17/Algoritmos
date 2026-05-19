@@ -1,5 +1,6 @@
 package Ejer1;
-import Act1.*;
+import Act1.Coordenada;
+import Act2.*;
 public class Ejer1{
     public static void main(String[] args){
         ContainerRect c=new ContainerRect(5);
