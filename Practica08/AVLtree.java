@@ -1,6 +1,7 @@
 package Practica08;
 import Act6.*;
 import Act4.*;
+// Actividad 3.1
 public class AVLtree<E extends Comparable<E>> extends LinkedBST<E>{
     protected class AVLNode extends Node{
         int height;
@@ -18,6 +19,8 @@ public class AVLtree<E extends Comparable<E>> extends LinkedBST<E>{
         }
         return ((AVLNode)n).height;
     }
+    // Actividad 3.2
+    // Cálculo del factor de balanceo
     private int balance(Node n){
         if(n==null){
             return 0;
@@ -42,9 +45,11 @@ public class AVLtree<E extends Comparable<E>> extends LinkedBST<E>{
         ((AVLNode)y).height=Math.max(height(y.left),height(y.right))+1;
         return y;
     }
+    // Inserción con balanceo
     public void insert(E dato) throws ItemDuplicated{
         root=insertAVL(root,dato);
     }
+    // Actividad 3.3
     private Node insertAVL(Node actual,E dato) throws ItemDuplicated{
         if(actual==null){
             return new AVLNode(dato);
@@ -61,6 +66,7 @@ public class AVLtree<E extends Comparable<E>> extends LinkedBST<E>{
         }
         ((AVLNode)actual).height= 1+Math.max(height(actual.left),height(actual.right));
         int bal=balance(actual);
+        // Actividad 3.3
         // LL
         if(bal>1 && dato.compareTo(actual.left.dato)<0){
             return rotRight(actual);
