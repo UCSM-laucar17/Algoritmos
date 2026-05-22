@@ -1,3 +1,5 @@
+package Practica08.avltree;
+
 // Clase que representa un nodo de B+ Tree
 class BPlusNode {
     int[] keys;             // Claves del nodo
@@ -14,7 +16,6 @@ class BPlusNode {
         next = null;
     }
 }
-
 // Clase principal del B+ Tree
 class BPlusTree {
     BPlusNode root; // Raíz del árbol
@@ -24,8 +25,9 @@ class BPlusTree {
         this.root = new BPlusNode(t, true); // Inicialmente la raíz es hoja
         this.t = t;
     }
-
-// Búsqueda paso a paso
+    // ----------------------
+    // Búsqueda paso a paso
+    // ----------------------
     public BPlusNode search(int key, BPlusNode node) {
         int i = 0;
         // Avanza mientras la clave sea mayor que las del nodo
@@ -37,8 +39,9 @@ class BPlusTree {
         // Recurre al hijo correspondiente
         return search(key, node.children[i]);
     }
-
-// Inserción paso a paso
+    // ----------------------
+    // Inserción paso a paso
+    // ----------------------
     public void insert(int key) {
         BPlusNode r = root;
         // Si la raíz está llena, se divide
@@ -75,8 +78,9 @@ class BPlusTree {
             insertNonFull(node.children[i], key);
         }
     }
-
-// División de un hijo lleno
+    // ----------------------
+    // División de un hijo lleno
+    // ----------------------
     private void splitChild(BPlusNode parent, int index, BPlusNode child) {
         BPlusNode newNode = new BPlusNode(t, child.isLeaf);
         newNode.numKeys = t - 1;
@@ -109,13 +113,14 @@ class BPlusTree {
             child.next = newNode;
         }
     }
-
-// Recorrido de hojas paso a paso
+    // ----------------------
+    // Recorrido de hojas paso a paso
+    // ----------------------
     public void printLeaves() {
         BPlusNode current = root;
         // Ir hasta la primera hoja
         while (!current.isLeaf) current = current.children[0];
-        System.out.print("Nodos hojas: ");
+        System.out.print("Leaf nodes: ");
         while (current != null) {
             for (int i = 0; i < current.numKeys; i++) {
                 System.out.print(current.keys[i] + " ");
@@ -125,15 +130,16 @@ class BPlusTree {
         System.out.println();
     }
 }
-
+// ----------------------
 // Clase Main para prueba paso a paso
+// ----------------------
 public class Main {
     public static void main(String[] args) {
         BPlusTree tree = new BPlusTree(3); // Grado mínimo t=3
         // Paso 1: insertar claves iniciales
         int[] keys = {10, 20, 5, 6, 12, 30, 7, 17};
         for (int key : keys) {
-            System.out.println("Insertar: " + key);
+            System.out.println("Inserting key: " + key);
             tree.insert(key);
         }
         // Paso 2: mostrar hojas enlazadas
@@ -145,7 +151,7 @@ public class Main {
         if (result != null) {
             System.out.println("\nClave " + searchKey + " encontrada en la hoja.");
         } else {
-            System.out.println("\nClave " + searchKey + " No encontrada.");
+            System.out.println("\nClave " + searchKey + " NO encontrada.");
         }
     }
 }
