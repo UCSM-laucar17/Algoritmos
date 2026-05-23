@@ -3,7 +3,7 @@ package Practica08.Act3c;
 import Practica08.Act3.*;
 import Practica08.Act3b.*;
 
-public class AVLtree33<E extends Comparable<E>>extends AVLtree32<E>{
+public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
     protected AVLnodo<E>balanceToLeft(AVLnodo<E> node){
         AVLnodo<E> izq=node.left;
         //LL
