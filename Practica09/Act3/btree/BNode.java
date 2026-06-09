@@ -1,5 +1,6 @@
 package btree;
 import java.util.ArrayList;
+
 public class BNode<E extends Comparable<E>>{
     private static int nextId = 1; //Para identificar cada nodo
     protected int idNode;
