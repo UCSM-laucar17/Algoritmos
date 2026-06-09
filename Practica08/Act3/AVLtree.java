@@ -1,7 +1,8 @@
 package Practica08.Act3;
-
 import Act4.*;
+
 public class AVLtree<E extends Comparable<E>>{
+//Inicio Act 3.a
     public class AVLnodo{
         public E dato;
         public int bf;
@@ -19,12 +20,15 @@ public class AVLtree<E extends Comparable<E>>{
     }
     protected AVLnodo root;
     protected boolean altura;
+
     public AVLtree(){
         root=null;
     }
     public boolean isEmpty(){
         return root==null;
     }
+//Fin Act 3.a
+//Inicio ACt 3.b
     public void insert(E x)throws ItemDuplicated{
         altura=false;
         root=insertRec(root,x);
@@ -78,6 +82,8 @@ public class AVLtree<E extends Comparable<E>>{
         }
         return node;
     }
+//Fin Act 3.b
+//Inicio ACT 3.c
     protected AVLnodo balanceToLeft(AVLnodo node){
         AVLnodo izq=node.left;
         //LL
@@ -140,6 +146,8 @@ public class AVLtree<E extends Comparable<E>>{
         }
         return node;
     }
+//Fin Act 3.c
+//Incicio Act 3.d
     protected AVLnodo rotRight(AVLnodo y){
         AVLnodo x=y.left;
         AVLnodo t2=x.right;
@@ -166,6 +174,8 @@ public class AVLtree<E extends Comparable<E>>{
             preOrderRec(actual.right);
         }
     }
+//Fin ACt 3.d
+//Meotod extra de BSTtree
     public void inOrder(){
         System.out.print("InOrder: ");
         inOrderRec(root);

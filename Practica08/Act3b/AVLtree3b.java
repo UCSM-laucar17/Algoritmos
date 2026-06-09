@@ -1,26 +1,20 @@
 package Practica08.Act3b;
-
+import Practica08.Act3.AVLtree;
 import Act4.ItemDuplicated;
-import Practica08.Act3.*;
-import Practica08.Act3a.*;
-import Practica08.Act3c.*;
 
-
-public class AVLtree3b<E extends Comparable<E>>extends AVLtree3a<E>{
-    protected boolean altura;
-    public void insert(E x)
-    throws ItemDuplicated{
+public class AVLtree3b<E extends Comparable<E>>extends AVLtree<E>{
+//Inicio ACt 3.b
+    public void insert(E x)throws ItemDuplicated{
         altura=false;
         root=insertRec(root,x);
     }
-    private AVLnodo<E> insertRec(
-    AVLnodo<E> node,E x)
-    throws ItemDuplicated{
+    private AVLnodo insertRec(AVLnodo node,E x)throws ItemDuplicated{
         if(node==null){
             altura=true;
-            return new AVLnodo<>(x);
+            return new AVLnodo(x);
         }
         int cmp=x.compareTo(node.dato);
+        //izquierda
         if(cmp<0){
             node.left=insertRec(node.left,x);
             if(altura){
@@ -39,6 +33,7 @@ public class AVLtree3b<E extends Comparable<E>>extends AVLtree3a<E>{
                 }
             }
         }
+        //derecha
         else if(cmp>0){
             node.right=insertRec(node.right,x);
             if(altura){
@@ -62,4 +57,5 @@ public class AVLtree3b<E extends Comparable<E>>extends AVLtree3a<E>{
         }
         return node;
     }
+//Fin Act 3.b
 }

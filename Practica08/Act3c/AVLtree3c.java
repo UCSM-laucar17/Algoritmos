@@ -1,11 +1,10 @@
 package Practica08.Act3c;
-
 import Practica08.Act3.*;
-import Practica08.Act3b.*;
 
-public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
-    protected AVLnodo<E>balanceToLeft(AVLnodo<E> node){
-        AVLnodo<E> izq=node.left;
+public class AVLtree3c<E extends Comparable<E>> extends AVLtree<E>{
+//Inicio ACT 3.c
+    protected AVLnodo balanceToLeft(AVLnodo node){
+        AVLnodo izq=node.left;
         //LL
         if(izq.bf==-1){
             node.bf=0;
@@ -14,7 +13,7 @@ public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
         }
         //LR
         else{
-            AVLnodo<E> der=izq.right;
+            AVLnodo der=izq.right;
             switch(der.bf){
                 case -1:
                     node.bf=1;
@@ -35,8 +34,8 @@ public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
         }
         return node;
     }
-    protected AVLnodo<E>balanceToRight(AVLnodo<E> node){
-        AVLnodo<E> der=node.right;
+    protected AVLnodo balanceToRight(AVLnodo node){
+        AVLnodo der=node.right;
         //RR
         if(der.bf==1){
             node.bf=0;
@@ -45,7 +44,7 @@ public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
         }
         //RL
         else{
-            AVLnodo<E> izq=der.left;
+            AVLnodo izq=der.left;
             switch(izq.bf){
                 case 1:
                     node.bf=-1;
@@ -66,16 +65,5 @@ public class AVLtree33<E extends Comparable<E>>extends AVLtree3b<E>{
         }
         return node;
     }
-    public void preOrder(){
-        System.out.print("AVL: ");
-        preOrderRec(root);
-        System.out.println();
-    }
-    private void preOrderRec(AVLnodo<E> actual){
-        if(actual!=null){
-            System.out.print(actual+" ");
-            preOrderRec(actual.left);
-            preOrderRec(actual.right);
-        }
-    }
+//Fin Act 3.c
 }
