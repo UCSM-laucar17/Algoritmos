@@ -1,10 +1,8 @@
 package Practica10;
 
 public class ListLinked<E>{
-
     private Node<E> first;
     private int size;
-
     public ListLinked(){
         first = null;
         size = 0;
@@ -12,13 +10,10 @@ public class ListLinked<E>{
     public boolean isEmpty(){
         return first == null;
     }
-
     public int size(){
         return size;
     }
-
     public void addLast(E data){
-
         Node<E> nuevo = new Node<>(data);
         if (isEmpty()){
             first = nuevo;
@@ -29,10 +24,8 @@ public class ListLinked<E>{
             }
             aux.setNext(nuevo);
         }
-
         size++;
     }
-
     public E get(int index)throws ExceptionGraph{
         if (index < 0 || index >= size){
             throw new ExceptionGraph("Error");
@@ -43,7 +36,6 @@ public class ListLinked<E>{
         }
         return aux.getData();
     }
-
     public boolean contains(E data){
         Node<E> aux = first;
         while (aux != null){
@@ -55,7 +47,6 @@ public class ListLinked<E>{
         }
         return false;
     }
-
     @Override
     public String toString(){
         String resultado = "";

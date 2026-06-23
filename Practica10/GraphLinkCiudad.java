@@ -16,17 +16,15 @@ public class GraphLinkCiudad{
                 if (adj.getCiudad().getNombre().equals(nombre)){
                     return adj;
                 }
-            } catch (ExceptionGraph e) {
+            }catch (ExceptionGraph e) {
                 System.out.println(e.getMessage());
             }
         }
         return null;
     }
     public void insertarCarretera(String origen, String destino, int distancia){
-
         AdjListCiudad c1 = buscarCiudad(origen);
         AdjListCiudad c2 = buscarCiudad(destino);
-
         if (c1 == null || c2 == null){
             return;
         }
@@ -46,7 +44,7 @@ public class GraphLinkCiudad{
                     resultado += a.getDestino().getNombre() + "(" + a.getpeso() + " km) ";
                 }
                 resultado += "\n";
-            } catch (ExceptionGraph e){
+            }catch (ExceptionGraph e){
                 System.out.println(e.getMessage());
             }
         }
