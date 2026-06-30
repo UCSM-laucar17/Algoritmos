@@ -19,7 +19,7 @@ public class HashC<E>{
         this.m = size;                         // Guarda el tamaño de la tabla.
         this.table = new HashC.Element[m];     // Crea el arreglo de celdas.
         for (int i = 0; i < m; i++){
-            table[i] = new Element();          // Inicializa cada posición.
+            table[i] = new Element(); // Inicializa cada posición.
         }
     }
     private int hash(int key){
