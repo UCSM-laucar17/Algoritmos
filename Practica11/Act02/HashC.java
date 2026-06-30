@@ -1,5 +1,4 @@
 package Practica11.Act02;
-
 //Tabla hash cerrada con sondeo lineal para resolver colisiones.
 public class HashC<E>{
     private static final int EMPTY    = 0; // Celda vacía.

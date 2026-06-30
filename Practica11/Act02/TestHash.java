@@ -1,9 +1,6 @@
 package Practica11.Act02;
-/*
- * Clase de prueba para la tabla hash cerrada (HashC) con sondeo lineal.
- * Inserta los valores del enunciado, muestra la tabla, elimina la clave 30
- * y busca la clave 23 antes y después de la eliminación.
- */
+//Clase de prueba para la tabla hash cerrada (HashC) con sondeo lineal.
+// Inserta los valores del enunciado, muestra la tabla, elimina la clave 30 y busca la clave 23 antes y después de la eliminación.
 public class TestHash {
     public static void main(String[] args) {
         HashC<String> tabla = new HashC<>(11);
